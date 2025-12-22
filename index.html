@@ -426,39 +426,6 @@
         <a href="CIRTIFICATE OF EXCELLENCE yy .pdf" target="_blank" class="certificate-link">Open Certificate</a>
       </div>
 
-     <div class="card achievement-card">
-
-  <div class="cert-logo">
-    <img src="sbu logo.jpeg" alt="Achievement Logo"/>
-  </div>
-
-  <h3>Certificate of Excellence</h3>
-  <p>
-    Honored by Sarala Birla University for achieving the highest aggregate
-    percentage in Semesters 3 & 4 of BBA.
-  </p>
-  <span class="date">23 Sept 2025</span>
-
-  <!-- Buttons -->
-  <div class="achievement-buttons">
-    <button class="toggle-btn" onclick="toggleLink(this)">View Certificate</button>
-    <button class="toggle-btn" onclick="toggleGallery(this)">Gallery</button>
-  </div>
-
-  <!-- Certificate -->
-  <a href="CIRTIFICATE OF EXCELLENCE yy .pdf"
-     target="_blank"
-     class="certificate-link">
-    Open Certificate
-  </a>
-
-  <!-- Gallery (hidden by default) -->
-  <div class="achievement-gallery">
-    <img src="work1.jpg" alt="Achievement image 1">
-    <img src="work2.jpg" alt="Achievement image 2">
-    <img src="work3.jpg" alt="Achievement image 3">
-  </div>
-
 </div>
 
 
@@ -590,22 +557,6 @@
     }
   }
 </script>
-
-<script>
-function toggleGallery(button) {
-  const card = button.closest('.achievement-card');
-  const gallery = card.querySelector('.achievement-gallery');
-
-  if (gallery.style.display === 'grid') {
-    gallery.style.display = 'none';
-    button.textContent = 'Gallery';
-  } else {
-    gallery.style.display = 'grid';
-    button.textContent = 'Hide Gallery';
-  }
-}
-</script>
-
   
 
 </body>
