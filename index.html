@@ -591,6 +591,21 @@
   }
 </script>
 
+<script>
+function toggleGallery(button) {
+  const card = button.closest('.achievement-card');
+  const gallery = card.querySelector('.achievement-gallery');
+
+  if (gallery.style.display === 'grid') {
+    gallery.style.display = 'none';
+    button.textContent = 'Gallery';
+  } else {
+    gallery.style.display = 'grid';
+    button.textContent = 'Hide Gallery';
+  }
+}
+</script>
+
   
 
 </body>
