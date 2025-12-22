@@ -3225,3 +3225,32 @@ header {
 @media screen and (max-width: 768px) {
   .cards .card, .achievement-cards .card { width: 90%; }
 }
+.achievement-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Gallery container */
+.achievement-gallery {
+  display: none;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 10px;
+}
+
+/* Gallery images */
+.achievement-gallery img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.achievement-gallery img:hover {
+  transform: scale(1.05);
+}
